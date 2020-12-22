@@ -10,12 +10,12 @@ cap = cv2.VideoCapture(0)  # Access the computer camera
 
 #  Create trackbar for lower and upper bound of HSV
 cv2.namedWindow('Tracking Image')
-cv2.createTrackbar('LH', 'Tracking Image', 0, 255, nothing)
-cv2.createTrackbar('LS', 'Tracking Image', 43, 255, nothing)
-cv2.createTrackbar('LV', 'Tracking Image', 107, 255, nothing)
-cv2.createTrackbar('UH', 'Tracking Image', 255, 255, nothing)
-cv2.createTrackbar('US', 'Tracking Image', 255, 255, nothing)
-cv2.createTrackbar('UV', 'Tracking Image', 255, 255, nothing)
+cv2.createTrackbar('LH', 'Tracking Image', 0, 255, nothing)  # range from 0 to 255, with initial value = 0
+cv2.createTrackbar('LS', 'Tracking Image', 43, 255, nothing)  # range from 0 to 255, with initial value = 43
+cv2.createTrackbar('LV', 'Tracking Image', 107, 255, nothing)  # range from 0 to 255, with initial value = 107
+cv2.createTrackbar('UH', 'Tracking Image', 255, 255, nothing)  # range from 0 to 255, with initial value = 255
+cv2.createTrackbar('US', 'Tracking Image', 255, 255, nothing)  # range from 0 to 255, with initial value = 255
+cv2.createTrackbar('UV', 'Tracking Image', 255, 255, nothing)  # range from 0 to 255, with initial value = 255
 
 while True:
     _, frame = cap.read()
