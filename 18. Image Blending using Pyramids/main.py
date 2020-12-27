@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+# More info for Image Blending: http://pages.cs.wisc.edu/~csverma/CS766_09/ImageMosaic/imagemosaic.html
 apple = cv2.imread('apple.jpg')
 orange = cv2.imread('orange.jpg')
 apple_orange = np.hstack((apple[:, :256], orange[:, 256:]))
@@ -64,4 +65,3 @@ cv2.imshow("apple_orange", apple_orange)
 cv2.imshow("apple_orange_reconstruct", apple_orange_reconstruct)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
